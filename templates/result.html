@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Aspects Based Financial Sentiment Analysis</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+
+   <div class="container">
+    <h2 class='container-heading'><span class="heading_font">Aspects Based Financial Sentiment Analysis</span></h2><br>
+    <div class='description'>
+      <p>Prediction of Sentiment score for the given sentences and its aspects</p><br>
+    </div>
+   </div>
+	<div class="results">
+        <h1>Results And Analysis:</h1>
+        <br>
+        <ul>
+            <li><h2><span class='safe'>Sentence :</span> {{ sentence }}</h2></li>
+            <li><h2><span class='safe'>Aspect : </span>{{ aspect }}</h2></li>
+            <li><h2><span class='safe'>Sentiment Score : </span>{{ prediction }}</h2></li>
+            {% if prediction > 0%}
+                <h2><span class='safe'>Positive Sentiment</span></h2>
+            {% endif %} {% if prediction < 0%}
+                <h2><span class='danger'>Negative Sentiment</span></h2>
+            {% endif %} {% if prediction == 0%}
+                <h2><span class='safe'>Neutral Sentiment</span></h2>
+            {% endif %}
+        </ul>
+	</div>
+  <div class='footer'>
+    <p class='footer-description'>Project Implemented by : Verma Ayush - 211IT079, Rounak Jain - 211IT055, Sudarshan Zunja - 211IT072, Pari Poptani - 211IT045</p>
+  </div>
+	</body>
+</html>

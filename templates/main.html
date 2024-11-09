@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspects Based Financial Sentiment Analysis</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body >
+
+  <!-- Website Title -->
+
+  <div class="container">
+    <h2 class='container-heading'><span class="heading_font">Aspects Based Financial Sentiment Analysis</span></h2><br>
+    <div class='description'>
+      <p>Prediction of Sentiment score for the given sentences and its aspects</p><br>
+    </div>
+  </div>
+
+  <!-- Text Area -->
+  <div class="ml-container">
+    <form action="{{ url_for('predict')}}" method="POST">
+
+        <label for="Rownumber">Please provide any row number between 1 to 12 :</label>
+        <select id="Rownumber" name="Rownumber">
+          <option selected>----select option----</option>
+          <option value="0">sentence1</option>
+          <option value="1">sentence2</option>
+          <option value="2">sentence3</option>
+          <option value="3">sentence4</option>
+          <option value="4">sentence5</option>
+          <option value="5">sentence6</option>
+          <option value="6">sentence7</option>
+          <option value="7">sentence8</option>
+          <option value="8">sentence9</option>
+          <option value="9">sentence10</option>
+          <option value="10">sentence11</option>
+          <option value="11">sentence12</option>
+        </select><br>
+
+         <label for="selectModel">Select Model</label>
+        <select id="selectModel" name="selectModel">
+          <option selected>----select option----</option>
+          <option value="0">Sentiment Model</option>
+        </select><br>
+
+      <input type="submit" class="my-cta-button" value="Predict">
+    </form>
+  </div>
+  <div class='footer'>
+    <p class='footer-description'>Project Implemented by : Verma Ayush - 211IT079, Rounak Jain - 211IT055, Sudarshan Zunja - 211IT072, Pari Poptani - 211IT045</p>
+  </div>
+</body>
+
+</html>
