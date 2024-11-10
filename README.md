@@ -1,7 +1,9 @@
 # Aspects_based_financial_sentiment_analysis
 
 ## Overview : 
-IT457 itself denotes Aspects_based_financial_sentiment_analysis project
+The IT457 project focuses on Aspect-based Financial Sentiment Analysis. In this project, we analyze sentiment scores of sentences from the FiQA Task 1 dataset. Our approach involves examining numerical values within the sentences, as these numbers significantly influence sentiment scores. For instance, if one sentence includes "3%" and another contains "30%", even though they express similar sentiments, the second sentence will have a higher sentiment score due to the larger percentage.
+
+In addition to numerical values, we also account for root words—such as "high," "down," and "up"—that impact sentiment scores. Therefore, the overall sentiment score is determined by both the numerical context and the presence of these key aspect-related terms.
 
 ## Methodology :
 
