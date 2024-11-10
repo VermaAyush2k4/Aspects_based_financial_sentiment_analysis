@@ -38,7 +38,7 @@ The given figure main page we took input from input.csv file any row and after p
 
 <img width="833" alt="userinterfacedesign" src="https://github.com/user-attachments/assets/2806c16b-2c04-4c4e-be75-a390ad3c98c7">
 
-The 2 figures shows the output of particular sentences which we passed in input : 
+## The 2 figures shows the output of particular sentences which we passed in input : 
 
 ## Output1 : 
 
