@@ -7,10 +7,27 @@ In addition to numerical values, we also account for root words—such as "high,
 
 ## Methodology :
 
-The methodology of the project as shown in figure 
+The methodology of the project as shown in figure :
 
 ![WhatsApp Image 2024-09-05 at 1 02 55 AM (1)](https://github.com/user-attachments/assets/7c5db4b0-2eb8-45c2-b7b9-1c5af07fbed6)
 
+1) Input Module (FiQA dataset Headlines): Provides financial news headlines from the FiQA dataset as input.
+
+2) Language Model (BERT): Extracts contextual embeddings from headlines using the BERT language model.
+
+3) Numerical Encoder: Processes numerical values in headlines, capturing their relevance through dependency trees and a Digit CNN with max-pooling
+   
+4) Dictionary Creation: Creates a set of auxiliary terms to identify and embed relevant financial aspects.
+   
+6) Aspect Embedding: Generates embeddings for specific financial aspects based on auxiliary terms in a custom dictionary.
+
+7) Multi-head Attention Encoder: Applies attention mechanisms to focus on multiple financial aspects within the embeddings.
+
+8) Sentiment Score: To calculate sentiment scores, we combine BERT embeddings, numerical values, and attention mechanisms, generating info_sentiment_scores. We split the FiQA dataset (498 samples) into 85% for training and 15% for testing, training a deep neural network on the training set. Finally, we test with the remaining samples and compare predicted sentiment scores with the actual scores for evaluation.
+
+9) Evaluation Metrices : MSE and MAE
+
+10) Creatign model as sentiment_model.pkl in which we can predict any sentiment scores of any sentences along with its aspects.
 ## User Interface Design :
 
 <img width="833" alt="userinterfacedesign" src="https://github.com/user-attachments/assets/2806c16b-2c04-4c4e-be75-a390ad3c98c7">
