@@ -7,7 +7,7 @@ In addition to numerical values, we also account for root words—such as "high,
 
 ## Methodology :
 
-The methodology of the project as shown in figure :
+The methodology of the project as shown in figure and implemented in (IT457_Final_project):
 
 ![WhatsApp Image 2024-09-05 at 1 02 55 AM (1)](https://github.com/user-attachments/assets/7c5db4b0-2eb8-45c2-b7b9-1c5af07fbed6)
 
@@ -27,10 +27,17 @@ The methodology of the project as shown in figure :
 
 9) Evaluation Metrices : MSE and MAE
 
-10) Creatign model as sentiment_model.pkl in which we can predict any sentiment scores of any sentences along with its aspects.
+10) Creating model as sentiment_model.pkl in which we can predict any sentiment scores of any sentences along with its aspects(tested in IT457_final_result.ipynb).
+
 ## User Interface Design :
 
+In input.csv we took 12 samples which consists of sentences and its aspects for testing this model (sentiment_model.pkl) and this done with user interface design used as : html,CSS,flask. 
+
+The given figure main page we took input from input.csv file any row and after predict button it will go to result page:
+
 <img width="833" alt="userinterfacedesign" src="https://github.com/user-attachments/assets/2806c16b-2c04-4c4e-be75-a390ad3c98c7">
+
+The 2 figures shows the output of particular sentences which we passed in input : 
 
 <img width="874" alt="userinterfacedesign1" src="https://github.com/user-attachments/assets/afcb502b-1d89-48ab-9652-7897d7a5e799">
 
