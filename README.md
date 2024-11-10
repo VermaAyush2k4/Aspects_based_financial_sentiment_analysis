@@ -48,5 +48,4 @@ The given figure main page we took input from input.csv file any row and after p
 
 <img width="829" alt="userinterfacedesign2" src="https://github.com/user-attachments/assets/c8b026e1-4bec-43b2-a65f-b31c0c910e11">
 
-
-
+The sentiment_model.pkl file is available at the following link : " https://drive.google.com/file/d/1ZQKp07LIX7EmeGoAk8SxpiNP2aSxOWQY/view?usp=sharing " Simply visit this link to download the model.
