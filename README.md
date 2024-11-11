@@ -31,7 +31,7 @@ The methodology of the project as shown in figure and implemented in (IT457_Fina
 
 # User Interface Design :
 
-In input.csv we took 12 samples which consists of sentences and its aspects for testing this model (sentiment_model.pkl) and this done with user interface design used as : html,CSS,flask. 
+In input.csv we took 12 samples which consists of sentences and its aspects for testing this model (sentiment_model.pkl) and this done with user interface design used as : html,CSS,flask(For This run IT457_interface_demo) file. 
 
 ## Input :
 The given figure main page we took input from input.csv file any row and after predict button it will go to result page:
